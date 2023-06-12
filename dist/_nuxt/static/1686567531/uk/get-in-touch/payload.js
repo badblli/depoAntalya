@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/uk/get-in-touch", {data:[{_img:{}}],fetch:{},mutations:void 0});

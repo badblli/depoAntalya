@@ -1,0 +1,33 @@
+{
+  "name": "depoantalya",
+  "version": "1.0.0",
+  "description": "Depo Antalya",
+  "author": "badblli",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/apollo": "^4.0.1-rc.5",
+    "@nuxtjs/i18n": "^7.3.1",
+    "@nuxtjs/strapi": "^0.3.1",
+    "compression": "^1.7.4",
+    "graphql": "^15.8.0",
+    "graphql-tag": "^2.12.6",
+    "mixitup": "^3.3.1",
+    "nuxt": "^2.0.0",
+    "swiper": "^5.4.5",
+    "v-owl-carousel": "^1.0.8",
+    "validator": "^13.7.0",
+    "vue-awesome-swiper": "^4.1.1",
+    "vue-count-to": "^1.0.13",
+    "vue-observe-visibility": "^0.4.6",
+    "vue-slick-carousel": "^1.0.6"
+  },
+  "devDependencies": {
+    "@nuxt/image": "^0.7.1"
+  }
+}

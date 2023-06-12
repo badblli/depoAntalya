@@ -1,0 +1,25 @@
+{
+  "entry": "server.js",
+  "files": {
+    "pages/about.js": "pages/about.js",
+    "pages/contact.js": "pages/contact.js",
+    "pages/events.js": "pages/events.js",
+    "pages/gallery.js": "pages/gallery.js",
+    "pages/get-in-touch.js": "pages/get-in-touch.js",
+    "pages/index.js": "pages/index.js",
+    "pages/maintenance.js": "pages/maintenance.js",
+    "pages/pricing.js": "pages/pricing.js",
+    "server.js": "server.js"
+  },
+  "maps": {
+    "pages/about.js": "pages/about.js.map",
+    "pages/contact.js": "pages/contact.js.map",
+    "pages/events.js": "pages/events.js.map",
+    "pages/gallery.js": "pages/gallery.js.map",
+    "pages/get-in-touch.js": "pages/get-in-touch.js.map",
+    "pages/index.js": "pages/index.js.map",
+    "pages/maintenance.js": "pages/maintenance.js.map",
+    "pages/pricing.js": "pages/pricing.js.map",
+    "server.js": "server.js.map"
+  }
+}
