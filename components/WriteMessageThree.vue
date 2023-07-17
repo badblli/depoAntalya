@@ -105,6 +105,7 @@ export default {
       this.formData.phone = "";
       this.formData.subject = "";
       this.formData.message = "";
+      this.$recaptcha.reset()
     },
 
     closeModal() {

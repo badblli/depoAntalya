@@ -38,6 +38,7 @@ export default {
       this.formData.depoUnit = "";
       this.formData.date = "";
       this.formData.time = "";
+       this.$recaptcha.reset()
     },
     closeModal() {
       this.showModal = false;
