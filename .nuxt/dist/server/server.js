@@ -115,7 +115,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 51);
+/******/ 	return __webpack_require__(__webpack_require__.s = 52);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -735,7 +735,7 @@ exports.withoutTrailingSlash = withoutTrailingSlash;
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return setLocaleCookie; });
 /* harmony import */ var cookie__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(15);
 /* harmony import */ var cookie__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(cookie__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var js_cookie__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(60);
+/* harmony import */ var js_cookie__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(61);
 /* harmony import */ var js_cookie__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(js_cookie__WEBPACK_IMPORTED_MODULE_1__);
 
 
@@ -2198,6 +2198,7 @@ const GetAllSiteConfig = graphql_tag__WEBPACK_IMPORTED_MODULE_0___default.a`
           googleMapUrl
           maintenance
           successMessage
+          errorMessage
           googleIframeUrl
           logo {
             data {
@@ -2554,7 +2555,7 @@ module.exports = require("graphql-tag");
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(55);
+var content = __webpack_require__(56);
 if(content.__esModule) content = content.default;
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
@@ -2571,7 +2572,7 @@ module.exports.__inject__ = function (context) {
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(57);
+var content = __webpack_require__(58);
 if(content.__esModule) content = content.default;
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
@@ -2588,7 +2589,7 @@ module.exports.__inject__ = function (context) {
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(59);
+var content = __webpack_require__(60);
 if(content.__esModule) content = content.default;
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
@@ -2635,7 +2636,7 @@ var componentNormalizer = __webpack_require__(4);
 
 function injectStyles (context) {
   
-  var style0 = __webpack_require__(58)
+  var style0 = __webpack_require__(59)
 if (style0.__inject__) style0.__inject__(context)
 
 }
@@ -2663,6 +2664,12 @@ module.exports = require("compression");
 
 /***/ }),
 /* 31 */
+/***/ (function(module, exports) {
+
+module.exports = require("events");
+
+/***/ }),
+/* 32 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2687,7 +2694,7 @@ function isHTTPS(req, trustProxy = true) {
 module.exports = isHTTPS;
 
 /***/ }),
-/* 32 */
+/* 33 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2908,85 +2915,85 @@ function nuxtI18nHead({
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(6)["URLSearchParams"]))
 
 /***/ }),
-/* 33 */
+/* 34 */
 /***/ (function(module, exports) {
 
 module.exports = require("apollo-client");
 
 /***/ }),
-/* 34 */
+/* 35 */
 /***/ (function(module, exports) {
 
 module.exports = require("apollo-upload-client");
 
 /***/ }),
-/* 35 */
+/* 36 */
 /***/ (function(module, exports) {
 
 module.exports = require("subscriptions-transport-ws");
 
 /***/ }),
-/* 36 */
+/* 37 */
 /***/ (function(module, exports) {
 
 module.exports = require("subscriptions-transport-ws/dist/message-types");
 
 /***/ }),
-/* 37 */
+/* 38 */
 /***/ (function(module, exports) {
 
 module.exports = require("apollo-link-ws");
 
 /***/ }),
-/* 38 */
+/* 39 */
 /***/ (function(module, exports) {
 
 module.exports = require("apollo-utilities");
 
 /***/ }),
-/* 39 */
+/* 40 */
 /***/ (function(module, exports) {
 
 module.exports = require("apollo-link-persisted-queries");
 
 /***/ }),
-/* 40 */
+/* 41 */
 /***/ (function(module, exports) {
 
 module.exports = require("apollo-link-context");
 
 /***/ }),
-/* 41 */
+/* 42 */
 /***/ (function(module, exports) {
 
 module.exports = require("apollo-link-state");
 
 /***/ }),
-/* 42 */
+/* 43 */
 /***/ (function(module, exports) {
 
 module.exports = require("universal-cookie");
 
 /***/ }),
-/* 43 */
+/* 44 */
 /***/ (function(module, exports) {
 
 module.exports = require("cookie-universal");
 
 /***/ }),
-/* 44 */
+/* 45 */
 /***/ (function(module, exports) {
 
 module.exports = require("abort-controller");
 
 /***/ }),
-/* 45 */
+/* 46 */
 /***/ (function(module, exports) {
 
 module.exports = require("web-streams-polyfill/ponyfill/es2018");
 
 /***/ }),
-/* 46 */
+/* 47 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3041,7 +3048,7 @@ defu.extend = extend;
 module.exports = defu;
 
 /***/ }),
-/* 47 */
+/* 48 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3455,7 +3462,7 @@ const createInstance = defaults => {
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(6)["URL"], __webpack_require__(6)["URLSearchParams"]))
 
 /***/ }),
-/* 48 */
+/* 49 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3603,7 +3610,7 @@ Hookable.prototype.mergeHooks = mergeHooks;
 module.exports = Hookable;
 
 /***/ }),
-/* 49 */
+/* 50 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4049,7 +4056,7 @@ exports.withoutTrailingSlash = withoutTrailingSlash;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(6)["URLSearchParams"]))
 
 /***/ }),
-/* 50 */
+/* 51 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4085,14 +4092,14 @@ function getURL(req, includePath) {
 module.exports = getURL;
 
 /***/ }),
-/* 51 */
+/* 52 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(63);
+module.exports = __webpack_require__(64);
 
 
 /***/ }),
-/* 52 */
+/* 53 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4144,7 +4151,7 @@ __webpack_require__.r(__webpack_exports__);
 });
 
 /***/ }),
-/* 53 */
+/* 54 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4159,7 +4166,7 @@ __webpack_require__.r(__webpack_exports__);
 });
 
 /***/ }),
-/* 54 */
+/* 55 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4170,7 +4177,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /***/ }),
-/* 55 */
+/* 56 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
@@ -4183,7 +4190,7 @@ module.exports = ___CSS_LOADER_EXPORT___;
 
 
 /***/ }),
-/* 56 */
+/* 57 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4194,7 +4201,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /***/ }),
-/* 57 */
+/* 58 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
@@ -4207,7 +4214,7 @@ module.exports = ___CSS_LOADER_EXPORT___;
 
 
 /***/ }),
-/* 58 */
+/* 59 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4218,7 +4225,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /***/ }),
-/* 59 */
+/* 60 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
@@ -4231,25 +4238,25 @@ module.exports = ___CSS_LOADER_EXPORT___;
 
 
 /***/ }),
-/* 60 */
+/* 61 */
 /***/ (function(module, exports) {
 
 module.exports = require("js-cookie");
 
 /***/ }),
-/* 61 */
+/* 62 */
 /***/ (function(module, exports) {
 
 module.exports = require("cross-fetch/polyfill");
 
 /***/ }),
-/* 62 */
+/* 63 */
 /***/ (function(module, exports) {
 
 module.exports = require("vue-apollo/ssr");
 
 /***/ }),
-/* 63 */
+/* 64 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4275,9 +4282,9 @@ var external_node_fetch_default = /*#__PURE__*/__webpack_require__.n(external_no
 
 // CONCATENATED MODULE: ./.nuxt/middleware.js
 const middleware = {};
-middleware['maintenance'] = __webpack_require__(52);
+middleware['maintenance'] = __webpack_require__(53);
 middleware['maintenance'] = middleware['maintenance'].default || middleware['maintenance'];
-middleware['middleware'] = __webpack_require__(53);
+middleware['middleware'] = __webpack_require__(54);
 middleware['middleware'] = middleware['middleware'].default || middleware['middleware'];
 /* harmony default export */ var _nuxt_middleware = (middleware);
 // CONCATENATED MODULE: ./.nuxt/utils.js
@@ -4971,14 +4978,14 @@ function shouldScrollToTop(route) {
 
 
 
-const _5212b36e = () => interopDefault(__webpack_require__.e(/* import() | pages/about */ 1).then(__webpack_require__.bind(null, 104)));
-const _1ab06441 = () => interopDefault(__webpack_require__.e(/* import() | pages/contact */ 2).then(__webpack_require__.bind(null, 101)));
-const _71ca8e33 = () => interopDefault(__webpack_require__.e(/* import() | pages/index */ 6).then(__webpack_require__.bind(null, 98)));
-const _4d5326f0 = () => interopDefault(__webpack_require__.e(/* import() | pages/events */ 3).then(__webpack_require__.bind(null, 100)));
-const _cfb6631a = () => interopDefault(__webpack_require__.e(/* import() | pages/gallery */ 4).then(__webpack_require__.bind(null, 103)));
-const _2f3cfe46 = () => interopDefault(__webpack_require__.e(/* import() | pages/get-in-touch */ 5).then(__webpack_require__.bind(null, 102)));
-const _fdb4d598 = () => interopDefault(__webpack_require__.e(/* import() | pages/maintenance */ 7).then(__webpack_require__.bind(null, 105)));
-const _751f9ce7 = () => interopDefault(__webpack_require__.e(/* import() | pages/pricing */ 8).then(__webpack_require__.bind(null, 99)));
+const _5212b36e = () => interopDefault(__webpack_require__.e(/* import() | pages/about */ 1).then(__webpack_require__.bind(null, 105)));
+const _1ab06441 = () => interopDefault(__webpack_require__.e(/* import() | pages/contact */ 2).then(__webpack_require__.bind(null, 102)));
+const _71ca8e33 = () => interopDefault(__webpack_require__.e(/* import() | pages/index */ 6).then(__webpack_require__.bind(null, 99)));
+const _4d5326f0 = () => interopDefault(__webpack_require__.e(/* import() | pages/events */ 3).then(__webpack_require__.bind(null, 101)));
+const _cfb6631a = () => interopDefault(__webpack_require__.e(/* import() | pages/gallery */ 4).then(__webpack_require__.bind(null, 104)));
+const _2f3cfe46 = () => interopDefault(__webpack_require__.e(/* import() | pages/get-in-touch */ 5).then(__webpack_require__.bind(null, 103)));
+const _fdb4d598 = () => interopDefault(__webpack_require__.e(/* import() | pages/maintenance */ 7).then(__webpack_require__.bind(null, 106)));
+const _751f9ce7 = () => interopDefault(__webpack_require__.e(/* import() | pages/pricing */ 8).then(__webpack_require__.bind(null, 100)));
 
 const emptyFn = () => {};
 external_vue_default.a.use(external_vue_router_default.a);
@@ -5304,7 +5311,7 @@ var componentNormalizer = __webpack_require__(4);
 
 function injectStyles (context) {
   
-  var style0 = __webpack_require__(54)
+  var style0 = __webpack_require__(55)
 if (style0.__inject__) style0.__inject__(context)
 
 }
@@ -5568,7 +5575,7 @@ var nuxt_loading_render, nuxt_loading_staticRenderFns
 
 function nuxt_loading_injectStyles (context) {
   
-  var style0 = __webpack_require__(56)
+  var style0 = __webpack_require__(57)
 if (style0.__inject__) style0.__inject__(context)
 
 }
@@ -6039,6 +6046,188 @@ const layouts = {
     NuxtLoading: nuxt_loading
   }
 });
+// EXTERNAL MODULE: external "events"
+var external_events_ = __webpack_require__(31);
+
+// CONCATENATED MODULE: ./.nuxt/recaptcha.js
+
+
+const API_URL = 'https://www.recaptcha.net/recaptcha/api.js';
+class recaptcha_ReCaptcha {
+  constructor({
+    hideBadge,
+    language,
+    mode,
+    siteKey,
+    version,
+    size
+  }) {
+    if (!siteKey) {
+      throw new Error('ReCaptcha error: No key provided');
+    }
+    if (!version) {
+      throw new Error('ReCaptcha error: No version provided');
+    }
+    this._elements = {};
+    this._grecaptcha = null;
+    this._eventBus = null;
+    this._ready = false;
+    this.hideBadge = hideBadge;
+    this.language = language;
+    this.siteKey = siteKey;
+    this.version = version;
+    this.size = size;
+    this.mode = mode;
+  }
+  destroy() {
+    if (this._ready) {
+      this._ready = false;
+      const {
+        head
+      } = document;
+      const {
+        style
+      } = this._elements;
+      const scripts = [...document.head.querySelectorAll('script')].filter(script => script.src.includes('recaptcha'));
+      if (scripts.length) {
+        scripts.forEach(script => head.removeChild(script));
+      }
+      if (head.contains(style)) {
+        head.removeChild(style);
+      }
+      const badge = document.querySelector('.grecaptcha-badge');
+      if (badge) {
+        badge.remove();
+      }
+    }
+  }
+  async execute(action) {
+    try {
+      await this.init();
+      if ('grecaptcha' in window) {
+        return this._grecaptcha.execute(this.siteKey, {
+          action
+        });
+      }
+    } catch (error) {
+      throw new Error(`ReCaptcha error: Failed to execute ${error}`);
+    }
+  }
+  getResponse(widgetId) {
+    return new Promise((resolve, reject) => {
+      if ('grecaptcha' in window) {
+        if (this.size == 'invisible') {
+          this._grecaptcha.execute(widgetId);
+          window.recaptchaSuccessCallback = token => {
+            this._eventBus.emit('recaptcha-success', token);
+            resolve(token);
+          };
+          window.recaptchaErrorCallback = error => {
+            this._eventBus.emit('recaptcha-error', error);
+            reject(error);
+          };
+        } else {
+          const response = this._grecaptcha.getResponse(widgetId);
+          if (response) {
+            this._eventBus.emit('recaptcha-success', response);
+            resolve(response);
+          } else {
+            const errorMessage = 'Failed to execute';
+            this._eventBus.emit('recaptcha-error', errorMessage);
+            reject(errorMessage);
+          }
+        }
+      }
+    });
+  }
+  init() {
+    if (this._ready) {
+      // make sure caller waits until recaptcha get ready
+      return this._ready;
+    }
+    this._eventBus = new external_events_["EventEmitter"]();
+    this._elements = {
+      script: document.createElement('script'),
+      style: document.createElement('style')
+    };
+    const {
+      script,
+      style
+    } = this._elements;
+    script.setAttribute('async', '');
+    script.setAttribute('defer', '');
+    const params = [];
+    if (this.version === 3) {
+      params.push('render=' + this.siteKey);
+    }
+    if (this.language) {
+      params.push('hl=' + this.language);
+    }
+    let scriptUrl = API_URL;
+    if (this.mode === 'enterprise') {
+      scriptUrl = scriptUrl.replace('api.js', 'enterprise.js');
+      params.push('render=' + this.siteKey);
+    }
+    script.setAttribute('src', scriptUrl + '?' + params.join('&'));
+    window.recaptchaSuccessCallback = token => this._eventBus.emit('recaptcha-success', token);
+    window.recaptchaExpiredCallback = () => this._eventBus.emit('recaptcha-expired');
+    window.recaptchaErrorCallback = () => this._eventBus.emit('recaptcha-error', 'Failed to execute');
+    this._ready = new Promise((resolve, reject) => {
+      script.addEventListener('load', () => {
+        if (this.version === 3 && this.hideBadge) {
+          style.innerHTML = '.grecaptcha-badge { display: none }';
+          document.head.appendChild(style);
+        } else if (this.version === 2 && this.hideBadge) {
+          // display: none DISABLES the spam checking!
+          // ref: https://stackoverflow.com/questions/44543157/how-to-hide-the-google-invisible-recaptcha-badge
+          style.innerHTML = '.grecaptcha-badge { visibility: hidden; }';
+          document.head.appendChild(style);
+        }
+        this._grecaptcha = window.grecaptcha.enterprise || window.grecaptcha;
+        this._grecaptcha.ready(resolve);
+      });
+      script.addEventListener('error', () => {
+        document.head.removeChild(script);
+        reject('ReCaptcha error: Failed to load script');
+        this._ready = null;
+      });
+      document.head.appendChild(script);
+    });
+    return this._ready;
+  }
+  on(event, callback) {
+    return this._eventBus.on(event, callback);
+  }
+  reset(widgetId) {
+    if (this.version === 2 || typeof widgetId !== 'undefined') {
+      this._grecaptcha.reset(widgetId);
+    }
+  }
+  render(reference, {
+    sitekey,
+    theme
+  }) {
+    return this._grecaptcha.render(reference.$el || reference, {
+      sitekey,
+      theme
+    });
+  }
+}
+/* harmony default export */ var _nuxt_recaptcha = (function (_, inject) {
+  const {
+    recaptcha = {}
+  } = _.$config || {};
+  const options = {
+    ...{
+      "hideBadge": true,
+      "siteKey": "6LdmqS4nAAAAAMQvi7IKkAI6BqQJt3o-tx2L0HbP",
+      "version": 2
+    },
+    ...recaptcha
+  };
+  external_vue_default.a.component('Recaptcha', () => __webpack_require__.e(/* import() */ 9).then(__webpack_require__.bind(null, 107)));
+  inject('recaptcha', new recaptcha_ReCaptcha(options));
+});
 // EXTERNAL MODULE: ./node_modules/@nuxt/image/node_modules/defu/dist/defu.cjs
 var defu = __webpack_require__(21);
 var defu_default = /*#__PURE__*/__webpack_require__.n(defu);
@@ -6066,7 +6255,7 @@ async function imageMeta(ctx, url) {
 }
 async function _imageMeta(url) {
   if (true) {
-    const imageMeta2 = await Promise.resolve(/* import() */).then(__webpack_require__.t.bind(null, 71, 7)).then(r => r.default || r);
+    const imageMeta2 = await Promise.resolve(/* import() */).then(__webpack_require__.t.bind(null, 72, 7)).then(r => r.default || r);
     const data = await fetch(url).then(res => res.buffer());
     const metadata = imageMeta2(data);
     if (!metadata) {
@@ -6860,7 +7049,7 @@ external_vue_default.a.component('NPicture', nuxt_picture);
   inject('img', $img);
 });
 // EXTERNAL MODULE: ./node_modules/is-https/dist/index.js
-var is_https_dist = __webpack_require__(31);
+var is_https_dist = __webpack_require__(32);
 var is_https_dist_default = /*#__PURE__*/__webpack_require__.n(is_https_dist);
 
 // EXTERNAL MODULE: ./node_modules/@nuxtjs/i18n/node_modules/ufo/dist/index.cjs
@@ -7426,7 +7615,7 @@ function klona(x) {
 }
 
 // EXTERNAL MODULE: ./.nuxt/nuxt-i18n/head-meta.js
-var head_meta = __webpack_require__(32);
+var head_meta = __webpack_require__(33);
 
 // CONCATENATED MODULE: ./.nuxt/nuxt-i18n/plugin.main.js
 
@@ -7457,7 +7646,7 @@ external_vue_default.a.use(external_vue_i18n_default.a);
   } = nuxt_i18n_options["c" /* options */];
   const injectInNuxtState = lazy && (lazy === true || lazy.skipNuxtState !== true);
   if ( true && injectInNuxtState) {
-    const devalue = (await Promise.resolve(/* import() */).then(__webpack_require__.t.bind(null, 72, 7))).default;
+    const devalue = (await Promise.resolve(/* import() */).then(__webpack_require__.t.bind(null, 73, 7))).default;
     context.beforeNuxtRender(({
       nuxtState
     }) => {
@@ -7796,41 +7985,41 @@ var external_vue_apollo_ = __webpack_require__(23);
 var external_vue_apollo_default = /*#__PURE__*/__webpack_require__.n(external_vue_apollo_);
 
 // EXTERNAL MODULE: external "cross-fetch/polyfill"
-var polyfill_ = __webpack_require__(61);
+var polyfill_ = __webpack_require__(62);
 
 // EXTERNAL MODULE: external "apollo-client"
-var external_apollo_client_ = __webpack_require__(33);
+var external_apollo_client_ = __webpack_require__(34);
 
 // EXTERNAL MODULE: external "apollo-link"
 var external_apollo_link_ = __webpack_require__(11);
 
 // EXTERNAL MODULE: external "apollo-upload-client"
-var external_apollo_upload_client_ = __webpack_require__(34);
+var external_apollo_upload_client_ = __webpack_require__(35);
 
 // EXTERNAL MODULE: external "apollo-cache-inmemory"
 var external_apollo_cache_inmemory_ = __webpack_require__(13);
 
 // EXTERNAL MODULE: external "subscriptions-transport-ws"
-var external_subscriptions_transport_ws_ = __webpack_require__(35);
+var external_subscriptions_transport_ws_ = __webpack_require__(36);
 
 // EXTERNAL MODULE: external "subscriptions-transport-ws/dist/message-types"
-var message_types_ = __webpack_require__(36);
+var message_types_ = __webpack_require__(37);
 var message_types_default = /*#__PURE__*/__webpack_require__.n(message_types_);
 
 // EXTERNAL MODULE: external "apollo-link-ws"
-var external_apollo_link_ws_ = __webpack_require__(37);
+var external_apollo_link_ws_ = __webpack_require__(38);
 
 // EXTERNAL MODULE: external "apollo-utilities"
-var external_apollo_utilities_ = __webpack_require__(38);
+var external_apollo_utilities_ = __webpack_require__(39);
 
 // EXTERNAL MODULE: external "apollo-link-persisted-queries"
-var external_apollo_link_persisted_queries_ = __webpack_require__(39);
+var external_apollo_link_persisted_queries_ = __webpack_require__(40);
 
 // EXTERNAL MODULE: external "apollo-link-context"
-var external_apollo_link_context_ = __webpack_require__(40);
+var external_apollo_link_context_ = __webpack_require__(41);
 
 // EXTERNAL MODULE: external "apollo-link-state"
-var external_apollo_link_state_ = __webpack_require__(41);
+var external_apollo_link_state_ = __webpack_require__(42);
 
 // CONCATENATED MODULE: ./node_modules/vue-cli-plugin-apollo/graphql-client/src/index.js
 
@@ -8056,7 +8245,7 @@ function src_defaultGetAuth (tokenName) {
 }
 
 // EXTERNAL MODULE: external "universal-cookie"
-var external_universal_cookie_ = __webpack_require__(42);
+var external_universal_cookie_ = __webpack_require__(43);
 var external_universal_cookie_default = /*#__PURE__*/__webpack_require__.n(external_universal_cookie_);
 
 // CONCATENATED MODULE: ./.nuxt/apollo-module.js
@@ -8141,7 +8330,7 @@ external_vue_default.a.use(external_vue_apollo_default.a);
   // Allow access to the provider in the context
   app.apolloProvider = apolloProvider;
   if (true) {
-    const ApolloSSR = __webpack_require__(62);
+    const ApolloSSR = __webpack_require__(63);
     beforeNuxtRender(({
       nuxtState
     }) => {
@@ -8190,7 +8379,7 @@ external_vue_default.a.use(external_vue_apollo_default.a);
   });
 });
 // EXTERNAL MODULE: external "cookie-universal"
-var external_cookie_universal_ = __webpack_require__(43);
+var external_cookie_universal_ = __webpack_require__(44);
 var external_cookie_universal_default = /*#__PURE__*/__webpack_require__.n(external_cookie_universal_);
 
 // CONCATENATED MODULE: ./.nuxt/cookie-universal-nuxt.js
@@ -8206,10 +8395,10 @@ var external_cookie_universal_default = /*#__PURE__*/__webpack_require__.n(exter
   inject(options.alias, external_cookie_universal_default()(req, res, options.parseJSON));
 });
 // EXTERNAL MODULE: external "abort-controller"
-var external_abort_controller_ = __webpack_require__(44);
+var external_abort_controller_ = __webpack_require__(45);
 
 // EXTERNAL MODULE: external "web-streams-polyfill/ponyfill/es2018"
-var es2018_ = __webpack_require__(45);
+var es2018_ = __webpack_require__(46);
 
 // CONCATENATED MODULE: ./.nuxt/http.server.js
 
@@ -8240,7 +8429,7 @@ if (!global.ReadableStream) {
   } catch (_) {}
 }
 // EXTERNAL MODULE: ./node_modules/defu/dist/defu.js
-var dist_defu = __webpack_require__(46);
+var dist_defu = __webpack_require__(47);
 var dist_defu_default = /*#__PURE__*/__webpack_require__.n(dist_defu);
 
 // EXTERNAL MODULE: ./node_modules/destr/dist/index.cjs
@@ -8248,7 +8437,7 @@ var destr_dist = __webpack_require__(10);
 var destr_dist_default = /*#__PURE__*/__webpack_require__.n(destr_dist);
 
 // EXTERNAL MODULE: ./node_modules/ky/index.js
-var node_modules_ky = __webpack_require__(47);
+var node_modules_ky = __webpack_require__(48);
 
 // CONCATENATED MODULE: ./.nuxt/http.js
 
@@ -8420,15 +8609,15 @@ const createHttpInstance = options => {
   inject('http', http);
 });
 // EXTERNAL MODULE: ./node_modules/hookable/dist/hookable.js
-var hookable = __webpack_require__(48);
+var hookable = __webpack_require__(49);
 var hookable_default = /*#__PURE__*/__webpack_require__.n(hookable);
 
 // EXTERNAL MODULE: ./node_modules/requrl/dist/requrl.js
-var requrl = __webpack_require__(50);
+var requrl = __webpack_require__(51);
 var requrl_default = /*#__PURE__*/__webpack_require__.n(requrl);
 
 // EXTERNAL MODULE: ./node_modules/@nuxtjs/strapi/node_modules/ufo/dist/index.js
-var strapi_node_modules_ufo_dist = __webpack_require__(49);
+var strapi_node_modules_ufo_dist = __webpack_require__(50);
 
 // CONCATENATED MODULE: ./node_modules/@nuxtjs/strapi/lib/runtime/utils.js
 function getExpirationDate(ms) {
@@ -8706,6 +8895,7 @@ var _nuxt_empty = __webpack_require__(28);
 
 /* Plugins */
 
+ // Source: .\\recaptcha.js (mode: 'all')
  // Source: .\\image.js (mode: 'all')
  // Source: .\\nuxt-i18n\\plugin.utils.js (mode: 'all')
  // Source: .\\nuxt-i18n\\plugin.routing.js (mode: 'all')
@@ -8879,6 +9069,9 @@ async function createApp(ssrContext, config = {}) {
   if (false) {}
   // Plugin execution
 
+  if (typeof _nuxt_recaptcha === 'function') {
+    await _nuxt_recaptcha(app.context, inject);
+  }
   if (typeof _nuxt_image === 'function') {
     await _nuxt_image(app.context, inject);
   }
@@ -9243,35 +9436,35 @@ const createNext = ssrContext => opts => {
 });
 
 /***/ }),
-/* 64 */
+/* 65 */
 /***/ (function(module, exports) {
 
 module.exports = require("vue-slick-carousel");
 
 /***/ }),
-/* 65 */
+/* 66 */
 /***/ (function(module, exports) {
 
 module.exports = require("vue-count-to");
 
 /***/ }),
-/* 66 */
+/* 67 */
 /***/ (function(module, exports) {
 
 module.exports = require("vue-observe-visibility");
 
 /***/ }),
-/* 67 */,
 /* 68 */,
 /* 69 */,
 /* 70 */,
-/* 71 */
+/* 71 */,
+/* 72 */
 /***/ (function(module, exports) {
 
 module.exports = require("image-meta");
 
 /***/ }),
-/* 72 */
+/* 73 */
 /***/ (function(module, exports) {
 
 module.exports = require("devalue");

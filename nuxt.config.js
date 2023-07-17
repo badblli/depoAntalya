@@ -22,7 +22,12 @@ export default {
     domains: ["strapi.badblli.dev"],
   },
   buildModules: [],
-  modules: ["@nuxtjs/strapi", "@nuxtjs/apollo", "@nuxtjs/i18n", "@nuxt/image"],
+  modules: ["@nuxtjs/strapi", "@nuxtjs/apollo", "@nuxtjs/i18n", "@nuxt/image", "@nuxtjs/recaptcha"],
+  recaptcha: {
+    hideBadge: true,
+    siteKey: "6LdmqS4nAAAAAMQvi7IKkAI6BqQJt3o-tx2L0HbP",
+    version: 2,
+  },
   i18n: {
     defaultLocale,
     vueI18nLoader: true,
@@ -52,6 +57,6 @@ export default {
 
   build: {
     watch: ["~/constants/*.js"],
-    extend(config, ctx) {},
+    extend(config, ctx) { },
   },
 };

@@ -1,6 +1,7 @@
 {
   "entry": "server.js",
   "files": {
+    "9.js": "9.js",
     "pages/about.js": "pages/about.js",
     "pages/contact.js": "pages/contact.js",
     "pages/events.js": "pages/events.js",
@@ -12,6 +13,7 @@
     "server.js": "server.js"
   },
   "maps": {
+    "9.js": "9.js.map",
     "pages/about.js": "pages/about.js.map",
     "pages/contact.js": "pages/contact.js.map",
     "pages/events.js": "pages/events.js.map",

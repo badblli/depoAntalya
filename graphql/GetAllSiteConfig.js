@@ -15,6 +15,7 @@ export const GetAllSiteConfig = gql`
           googleMapUrl
           maintenance
           successMessage
+          errorMessage
           googleIframeUrl
           logo {
             data {

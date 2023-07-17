@@ -13,6 +13,7 @@ export default {
       disabled: false,
       showModal: false,
       formError: "",
+      recaptcha: false,
       formData: {
         name: "",
         email: "",
@@ -40,6 +41,7 @@ export default {
     },
     closeModal() {
       this.showModal = false;
+      this.recaptcha = false;
       this.resetForm();
     },
     async submitForm() {
@@ -86,6 +88,14 @@ export default {
   `;
 
   try {
+    const token = await this.$recaptcha.getResponse()
+        console.log('ReCaptcha token:', token)
+        if (!token) {
+          this.formError = "Please complete the reCAPTCHA.";
+          console.log('ReCaptcha token:', token)
+          this.recaptcha = true;
+          return;
+        }
     await this.$apollo.mutate({
       mutation: mutation,
       variables: {
@@ -108,7 +118,9 @@ export default {
     // Handle any errors that occurred during the mutation
     console.error(error);
     this.showModal = false;
-    this.formError = "An error occurred while submitting the form.";
+    this.recaptcha = true;
+        this.formError = "Please complete the reCAPTCHA.";      
+        await this.$recaptcha.reset()
   }
   finally {
         // Reset the loading state after the mutation completes
@@ -257,6 +269,7 @@ export default {
                         :placeholder="`${contacts.attributes.message}`"
                         v-model="formData.message"
                       ></textarea>
+                      <recaptcha />
                       <button type="submit" class="main-btn main-btn-2" >
                         {{ contacts.attributes.sendButton }}
                       </button>
@@ -304,6 +317,25 @@ export default {
             </div>
             <div class="modal-body">
               <p> {{ siteConfigs.attributes.successMessage }} </p>
+            </div>
+            <div class="modal-footer">          
+              <button type="button" class="btn btn-secondary" @click="closeModal">✔️</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div v-if="recaptcha" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document"
+        v-for="siteConfigs in siteConfigs.data" v-bind:key="siteConfigs.id">
+          <div class="modal-content">
+            <div class="modal-header">
+              <!-- <h5 class="modal-title">Modal Başlığı</h5> -->
+              <button type="button" class="close" @click="closeModal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p> {{ siteConfigs.attributes.errorMessage }} </p>
             </div>
             <div class="modal-footer">          
               <button type="button" class="btn btn-secondary" @click="closeModal">✔️</button>

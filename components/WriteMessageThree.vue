@@ -13,6 +13,7 @@ export default {
       disabled:false,
       showModal: false,
       formError: null,
+      recaptcha: false,
       formMessage: "",
       formData: {
         name: "",
@@ -21,6 +22,7 @@ export default {
         subject: "",
         message: "",
       },
+      recaptchaVerified: false,
     };
   },
   methods: {
@@ -29,6 +31,15 @@ export default {
   },
     async submitForm() {
       try {
+        const token = await this.$recaptcha.getResponse()
+        console.log('ReCaptcha token:', token)
+        if (!token) {
+          this.formError = "Please complete the reCAPTCHA.";
+          console.log('ReCaptcha token:', token)
+          this.recaptcha = true;
+          return;
+        }
+
         this.formLoading = true;
         this.formError = null;
 
@@ -72,29 +83,34 @@ export default {
             message: this.formData.message,
           },
         });
-    // Mutation was successful, show the modal
-    this.showModal = true;
-  } catch (error) {
-    // Handle any errors that occurred during the mutation
-    console.error(error);
-    this.showModal = false;
-    this.formError = "An error occurred while submitting the form.";
-  }
-  finally {
+
+        // Mutation was successful, show the modal
+        this.showModal = true;
+      } catch (error) {
+        this.recaptchaVerified = false;
+        this.recaptcha = true;
+        this.formError = "Please complete the reCAPTCHA.";      
+        await this.$recaptcha.reset()
+        // Handle any errors that occurred during the mutation
+        console.error(error);
+        this.showModal = false;
+      } finally {
         // Reset the loading state after the mutation completes
         this.formLoading = false;
       }
-},
-resetForm(){
-  this.formData.name = "";
-  this.formData.email = "";
-  this.formData.phone = "";
-  this.formData.subject = "";
-  this.formData.message = "";
-},
+    },
+    resetForm() {
+      this.formData.name = "";
+      this.formData.email = "";
+      this.formData.phone = "";
+      this.formData.subject = "";
+      this.formData.message = "";
+    },
 
     closeModal() {
       this.showModal = false;
+      this.recaptcha = false;
+       this.$recaptcha.reset()
       this.resetForm();
     },
   },
@@ -137,6 +153,25 @@ resetForm(){
             </div>
             <div class="modal-body">
               <p> {{ siteConfigs.attributes.successMessage }} </p>
+            </div>
+            <div class="modal-footer">          
+              <button type="button" class="btn btn-secondary" @click="closeModal">✔️</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div v-if="recaptcha" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document"
+        v-for="siteConfigs in siteConfigs.data" v-bind:key="siteConfigs.id">
+          <div class="modal-content">
+            <div class="modal-header">
+              <!-- <h5 class="modal-title">Modal Başlığı</h5> -->
+              <button type="button" class="close" @click="closeModal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p> {{ siteConfigs.attributes.errorMessage }} </p>
             </div>
             <div class="modal-footer">          
               <button type="button" class="btn btn-secondary" @click="closeModal">✔️</button>
@@ -206,9 +241,11 @@ resetForm(){
                         :placeholder="`${contacts.attributes.message}`"
                         v-model="formData.message"
                       ></textarea>
+                      <recaptcha  ref="recaptcha" />
                       <button
                         type="submit"
                         class="main-btn main-btn-2"
+                        :class="{ disabled:  disabled }"
                       
                       >
                         {{ contacts.attributes.sendButton }}
@@ -278,12 +315,12 @@ resetForm(){
                     ></iframe>
                   </div>
                 </div>
-                <nuxt-img
+                <!-- <nuxt-img
                   loading="lazy"
                   placeholder="blur"
                   :src="`http://localhost:8082${siteConfigs.attributes.logo.data.attributes.url}`"
                   :alt="`${siteConfigs.attributes.logo.data.attributes.name}`"
-                />
+                /> -->
               </div>
             </div>
           </div>
