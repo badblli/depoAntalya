@@ -4,14 +4,14 @@ import { normalizeURL, decode } from 'ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _5212b36e = () => interopDefault(import('..\\pages\\about.vue' /* webpackChunkName: "pages/about" */))
-const _1ab06441 = () => interopDefault(import('..\\pages\\contact.vue' /* webpackChunkName: "pages/contact" */))
-const _71ca8e33 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
-const _4d5326f0 = () => interopDefault(import('..\\pages\\events.vue' /* webpackChunkName: "pages/events" */))
-const _cfb6631a = () => interopDefault(import('..\\pages\\gallery.vue' /* webpackChunkName: "pages/gallery" */))
-const _2f3cfe46 = () => interopDefault(import('..\\pages\\get-in-touch.vue' /* webpackChunkName: "pages/get-in-touch" */))
-const _fdb4d598 = () => interopDefault(import('..\\pages\\maintenance.vue' /* webpackChunkName: "pages/maintenance" */))
-const _751f9ce7 = () => interopDefault(import('..\\pages\\pricing.vue' /* webpackChunkName: "pages/pricing" */))
+const _139b34a0 = () => interopDefault(import('..\\pages\\about.vue' /* webpackChunkName: "pages/about" */))
+const _c7c53e1a = () => interopDefault(import('..\\pages\\contact.vue' /* webpackChunkName: "pages/contact" */))
+const _33530f65 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
+const _48de1196 = () => interopDefault(import('..\\pages\\events.vue' /* webpackChunkName: "pages/events" */))
+const _1991cb25 = () => interopDefault(import('..\\pages\\gallery.vue' /* webpackChunkName: "pages/gallery" */))
+const _c11eb92a = () => interopDefault(import('..\\pages\\get-in-touch.vue' /* webpackChunkName: "pages/get-in-touch" */))
+const _5580e8e6 = () => interopDefault(import('..\\pages\\maintenance.vue' /* webpackChunkName: "pages/maintenance" */))
+const _12e6ccce = () => interopDefault(import('..\\pages\\pricing.vue' /* webpackChunkName: "pages/pricing" */))
 
 const emptyFn = () => {}
 
@@ -26,163 +26,163 @@ export const routerOptions = {
 
   routes: [{
     path: "/about",
-    component: _5212b36e,
+    component: _139b34a0,
     name: "about___tr"
   }, {
     path: "/contact",
-    component: _1ab06441,
+    component: _c7c53e1a,
     name: "contact___tr"
   }, {
     path: "/de",
-    component: _71ca8e33,
+    component: _33530f65,
     name: "index___de"
   }, {
     path: "/en",
-    component: _71ca8e33,
+    component: _33530f65,
     name: "index___en"
   }, {
     path: "/events",
-    component: _4d5326f0,
+    component: _48de1196,
     name: "events___tr"
   }, {
     path: "/gallery",
-    component: _cfb6631a,
+    component: _1991cb25,
     name: "gallery___tr"
   }, {
     path: "/get-in-touch",
-    component: _2f3cfe46,
+    component: _c11eb92a,
     name: "get-in-touch___tr"
   }, {
     path: "/maintenance",
-    component: _fdb4d598,
+    component: _5580e8e6,
     name: "maintenance___tr"
   }, {
     path: "/pricing",
-    component: _751f9ce7,
+    component: _12e6ccce,
     name: "pricing___tr"
   }, {
     path: "/ru",
-    component: _71ca8e33,
+    component: _33530f65,
     name: "index___ru"
   }, {
     path: "/uk",
-    component: _71ca8e33,
+    component: _33530f65,
     name: "index___uk"
   }, {
     path: "/de/about",
-    component: _5212b36e,
+    component: _139b34a0,
     name: "about___de"
   }, {
     path: "/de/contact",
-    component: _1ab06441,
+    component: _c7c53e1a,
     name: "contact___de"
   }, {
     path: "/de/events",
-    component: _4d5326f0,
+    component: _48de1196,
     name: "events___de"
   }, {
     path: "/de/gallery",
-    component: _cfb6631a,
+    component: _1991cb25,
     name: "gallery___de"
   }, {
     path: "/de/get-in-touch",
-    component: _2f3cfe46,
+    component: _c11eb92a,
     name: "get-in-touch___de"
   }, {
     path: "/de/maintenance",
-    component: _fdb4d598,
+    component: _5580e8e6,
     name: "maintenance___de"
   }, {
     path: "/de/pricing",
-    component: _751f9ce7,
+    component: _12e6ccce,
     name: "pricing___de"
   }, {
     path: "/en/about",
-    component: _5212b36e,
+    component: _139b34a0,
     name: "about___en"
   }, {
     path: "/en/contact",
-    component: _1ab06441,
+    component: _c7c53e1a,
     name: "contact___en"
   }, {
     path: "/en/events",
-    component: _4d5326f0,
+    component: _48de1196,
     name: "events___en"
   }, {
     path: "/en/gallery",
-    component: _cfb6631a,
+    component: _1991cb25,
     name: "gallery___en"
   }, {
     path: "/en/get-in-touch",
-    component: _2f3cfe46,
+    component: _c11eb92a,
     name: "get-in-touch___en"
   }, {
     path: "/en/maintenance",
-    component: _fdb4d598,
+    component: _5580e8e6,
     name: "maintenance___en"
   }, {
     path: "/en/pricing",
-    component: _751f9ce7,
+    component: _12e6ccce,
     name: "pricing___en"
   }, {
     path: "/ru/about",
-    component: _5212b36e,
+    component: _139b34a0,
     name: "about___ru"
   }, {
     path: "/ru/contact",
-    component: _1ab06441,
+    component: _c7c53e1a,
     name: "contact___ru"
   }, {
     path: "/ru/events",
-    component: _4d5326f0,
+    component: _48de1196,
     name: "events___ru"
   }, {
     path: "/ru/gallery",
-    component: _cfb6631a,
+    component: _1991cb25,
     name: "gallery___ru"
   }, {
     path: "/ru/get-in-touch",
-    component: _2f3cfe46,
+    component: _c11eb92a,
     name: "get-in-touch___ru"
   }, {
     path: "/ru/maintenance",
-    component: _fdb4d598,
+    component: _5580e8e6,
     name: "maintenance___ru"
   }, {
     path: "/ru/pricing",
-    component: _751f9ce7,
+    component: _12e6ccce,
     name: "pricing___ru"
   }, {
     path: "/uk/about",
-    component: _5212b36e,
+    component: _139b34a0,
     name: "about___uk"
   }, {
     path: "/uk/contact",
-    component: _1ab06441,
+    component: _c7c53e1a,
     name: "contact___uk"
   }, {
     path: "/uk/events",
-    component: _4d5326f0,
+    component: _48de1196,
     name: "events___uk"
   }, {
     path: "/uk/gallery",
-    component: _cfb6631a,
+    component: _1991cb25,
     name: "gallery___uk"
   }, {
     path: "/uk/get-in-touch",
-    component: _2f3cfe46,
+    component: _c11eb92a,
     name: "get-in-touch___uk"
   }, {
     path: "/uk/maintenance",
-    component: _fdb4d598,
+    component: _5580e8e6,
     name: "maintenance___uk"
   }, {
     path: "/uk/pricing",
-    component: _751f9ce7,
+    component: _12e6ccce,
     name: "pricing___uk"
   }, {
     path: "/",
-    component: _71ca8e33,
+    component: _33530f65,
     name: "index___tr"
   }],
 

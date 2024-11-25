@@ -159,13 +159,19 @@
         </div>
       </div>
     </div>
+    <WhatsappBtn class="whatsapp-btn" :class="{ 'shift-left': scrollBtn }" />
   </div>
 </template>
 
 <script>
 import { GetFooter } from "../graphql/GetFooter";
+import WhatsappBtn from "./WhatsappBtn.vue";
+
 export default {
   name: "Footer",
+  components: {
+    WhatsappBtn,
+  },
   data() {
     return {
       scrollBtn: false,
@@ -202,4 +208,13 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.whatsapp-btn {
+  transform: translateX(0); /* Varsayılan konum */
+  transition: transform 0.3s ease-out; /* Geçiş animasyonu */
+}
+.shift-left {
+  transform: translateX(-45px); /* Adjust the value as needed */
+  transition: transform 0.3s ease;
+}
+</style>
