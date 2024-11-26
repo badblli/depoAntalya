@@ -12,10 +12,10 @@
           id="#"
           cols="8"
           rows="4"
-          placeholder="Message"
+          :placeholder="placeholder"
         ></textarea>
         <button class="main-btn main-btn-2" @click="sendWhatsAppMessage">
-          Gönder
+          {{ sendTitle }}
         </button>
       </div>
     </transition>
@@ -29,13 +29,72 @@ export default {
       isPopupOpen: false,
       message: "",
       phoneNumber: "905424648229", // WhatsApp numarası
+      sendTitle: "Send Message", // Buton başlığı
+      placeholder: "Message", // Textarea placeholder
     };
   },
+  watch: {
+    // Locale değiştiğinde başlık, placeholder ve mesaj güncelleniyor
+    "$i18n.locale"(newLocale) {
+      this.updateLocaleTexts(newLocale);
+    },
+  },
+  mounted() {
+    // Başlangıçta metinler ayarlanıyor
+    this.updateLocaleTexts(this.$i18n.locale);
+  },
   methods: {
+    updateLocaleTexts(locale) {
+      // Locale'e göre "Send Message" ve "Message" çevirileri
+      this.sendTitle =
+        locale === "tr"
+          ? "Mesaj Gönder"
+          : locale === "en"
+          ? "Send Message"
+          : locale === "ru"
+          ? "Отправить сообщение"
+          : locale === "de"
+          ? "Nachricht senden"
+          : locale === "uk"
+          ? "Надіслати повідомлення"
+          : "Send Message";
+
+      this.placeholder =
+        locale === "tr"
+          ? "Mesaj"
+          : locale === "en"
+          ? "Message"
+          : locale === "ru"
+          ? "Сообщение"
+          : locale === "de"
+          ? "Nachricht"
+          : locale === "uk"
+          ? "Повідомлення"
+          : "Message";
+    },
     togglePopup() {
       this.isPopupOpen = !this.isPopupOpen;
     },
     sendWhatsAppMessage() {
+      let locale = this.$i18n.locale;
+      // Mesaj başlığını güncelle
+      const translatedRequest =
+        locale === "tr"
+          ? "Bilgi Almak İstiyorum"
+          : locale === "en"
+          ? "I Want to Get Information"
+          : locale === "ru"
+          ? "Я хочу получить информацию"
+          : locale === "de"
+          ? "Ich möchte Informationen erhalten"
+          : locale === "uk"
+          ? "Я хочу отримати інформацію"
+          : "I Want to Get Information";
+
+      const prefixMessage = `${locale}`;
+      this.message =
+        `${prefixMessage}\n${translatedRequest}\n` + " | " + this.message;
+
       if (this.message.trim() !== "") {
         const whatsappURL = `https://wa.me/${
           this.phoneNumber
