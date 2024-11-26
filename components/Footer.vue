@@ -165,12 +165,12 @@
 
 <script>
 import { GetFooter } from "../graphql/GetFooter";
-import WhatsappBtn from "./WhatsappBtn.vue";
+// import WhatsappBtn from "./WhatsappBtn.vue";
 
 export default {
   name: "Footer",
   components: {
-    WhatsappBtn,
+    // WhatsappBtn,
   },
   data() {
     return {
