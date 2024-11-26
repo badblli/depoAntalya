@@ -159,7 +159,7 @@
         </div>
       </div>
     </div>
-    <WhatsappBtn class="whatsapp-btn" :class="{ 'shift-left': scrollBtn }" />
+    <!-- <WhatsappBtn class="whatsapp-btn" :class="{ 'shift-left': scrollBtn }" /> -->
   </div>
 </template>
 
