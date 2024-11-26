@@ -159,18 +159,18 @@
         </div>
       </div>
     </div>
-    <!-- <WhatsappBtn class="whatsapp-btn" :class="{ 'shift-left': scrollBtn }" /> -->
+    <WhatsappBtn class="whatsapp-btn" :class="{ 'shift-left': scrollBtn }" />
   </div>
 </template>
 
 <script>
 import { GetFooter } from "../graphql/GetFooter";
-// import WhatsappBtn from "./WhatsappBtn.vue";
+import WhatsappBtn from "./WhatsappBtn.vue";
 
 export default {
   name: "Footer",
   components: {
-    // WhatsappBtn,
+    WhatsappBtn,
   },
   data() {
     return {

@@ -4978,14 +4978,14 @@ function shouldScrollToTop(route) {
 
 
 
-const _139b34a0 = () => interopDefault(__webpack_require__.e(/* import() | pages/about */ 1).then(__webpack_require__.bind(null, 108)));
-const _c7c53e1a = () => interopDefault(__webpack_require__.e(/* import() | pages/contact */ 2).then(__webpack_require__.bind(null, 105)));
-const _33530f65 = () => interopDefault(__webpack_require__.e(/* import() | pages/index */ 6).then(__webpack_require__.bind(null, 102)));
-const _48de1196 = () => interopDefault(__webpack_require__.e(/* import() | pages/events */ 3).then(__webpack_require__.bind(null, 104)));
-const _1991cb25 = () => interopDefault(__webpack_require__.e(/* import() | pages/gallery */ 4).then(__webpack_require__.bind(null, 107)));
-const _c11eb92a = () => interopDefault(__webpack_require__.e(/* import() | pages/get-in-touch */ 5).then(__webpack_require__.bind(null, 106)));
-const _5580e8e6 = () => interopDefault(__webpack_require__.e(/* import() | pages/maintenance */ 7).then(__webpack_require__.bind(null, 109)));
-const _12e6ccce = () => interopDefault(__webpack_require__.e(/* import() | pages/pricing */ 8).then(__webpack_require__.bind(null, 103)));
+const _139b34a0 = () => interopDefault(__webpack_require__.e(/* import() | pages/about */ 1).then(__webpack_require__.bind(null, 111)));
+const _c7c53e1a = () => interopDefault(__webpack_require__.e(/* import() | pages/contact */ 2).then(__webpack_require__.bind(null, 108)));
+const _33530f65 = () => interopDefault(__webpack_require__.e(/* import() | pages/index */ 6).then(__webpack_require__.bind(null, 105)));
+const _48de1196 = () => interopDefault(__webpack_require__.e(/* import() | pages/events */ 3).then(__webpack_require__.bind(null, 107)));
+const _1991cb25 = () => interopDefault(__webpack_require__.e(/* import() | pages/gallery */ 4).then(__webpack_require__.bind(null, 110)));
+const _c11eb92a = () => interopDefault(__webpack_require__.e(/* import() | pages/get-in-touch */ 5).then(__webpack_require__.bind(null, 109)));
+const _5580e8e6 = () => interopDefault(__webpack_require__.e(/* import() | pages/maintenance */ 7).then(__webpack_require__.bind(null, 112)));
+const _12e6ccce = () => interopDefault(__webpack_require__.e(/* import() | pages/pricing */ 8).then(__webpack_require__.bind(null, 106)));
 
 const emptyFn = () => {};
 external_vue_default.a.use(external_vue_router_default.a);
@@ -6225,7 +6225,7 @@ class recaptcha_ReCaptcha {
     },
     ...recaptcha
   };
-  external_vue_default.a.component('Recaptcha', () => __webpack_require__.e(/* import() */ 9).then(__webpack_require__.bind(null, 110)));
+  external_vue_default.a.component('Recaptcha', () => __webpack_require__.e(/* import() */ 9).then(__webpack_require__.bind(null, 113)));
   inject('recaptcha', new recaptcha_ReCaptcha(options));
 });
 // EXTERNAL MODULE: ./node_modules/@nuxt/image/node_modules/defu/dist/defu.cjs
