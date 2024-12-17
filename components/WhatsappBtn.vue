@@ -41,7 +41,7 @@ export default {
   },
   mounted() {
     // Başlangıçta metinler ayarlanıyor
-    // this.updateLocaleTexts(this.$i18n.locale);
+    this.updateLocaleTexts(this.$i18n.locale);
   },
   methods: {
     updateLocaleTexts(locale) {
@@ -61,16 +61,16 @@ export default {
 
       this.placeholder =
         locale === "tr"
-          ? "Mesaj"
+          ? "Merhaba bilgi almak istiyorum"
           : locale === "en"
-          ? "Message"
+          ? "Hi, I want to get information"
           : locale === "ru"
-          ? "Сообщение"
+          ? "Здравствуйте, я хочу получить информацию"
           : locale === "de"
-          ? "Nachricht"
+          ? "Hallo, ich möchte Informationen erhalten"
           : locale === "uk"
-          ? "Повідомлення"
-          : "Message";
+          ? "Здравствуйте, я хочу получить информацию"
+          : "Hi, I want to get information";
     },
     togglePopup() {
       this.isPopupOpen = !this.isPopupOpen;
