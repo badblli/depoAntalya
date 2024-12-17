@@ -30,7 +30,7 @@ export default {
       message: "",
       phoneNumber: "905424648229", // WhatsApp numarası
       sendTitle: "Send Message", // Buton başlığı
-      placeholder: "Message", // Textarea placeholder
+      placeholder: "Merhaba bilgi almak istiyorum", // Textarea placeholder
     };
   },
   watch: {
@@ -41,7 +41,7 @@ export default {
   },
   mounted() {
     // Başlangıçta metinler ayarlanıyor
-    this.updateLocaleTexts(this.$i18n.locale);
+    // this.updateLocaleTexts(this.$i18n.locale);
   },
   methods: {
     updateLocaleTexts(locale) {
@@ -78,23 +78,23 @@ export default {
     sendWhatsAppMessage() {
       let locale = this.$i18n.locale;
       // Mesaj başlığını güncelle
-      const translatedRequest =
-        locale === "tr"
-          ? "Bilgi Almak İstiyorum"
-          : locale === "en"
-          ? "I Want to Get Information"
-          : locale === "ru"
-          ? "Я хочу получить информацию"
-          : locale === "de"
-          ? "Ich möchte Informationen erhalten"
-          : locale === "uk"
-          ? "Я хочу отримати інформацію"
-          : "I Want to Get Information";
+      // const translatedRequest =
+      //   locale === "tr"
+      //     ? "Bilgi Almak İstiyorum"
+      //     : locale === "en"
+      //     ? "I Want to Get Information"
+      //     : locale === "ru"
+      //     ? "Я хочу получить информацию"
+      //     : locale === "de"
+      //     ? "Ich möchte Informationen erhalten"
+      //     : locale === "uk"
+      //     ? "Я хочу отримати інформацію"
+      //     : "I Want to Get Information";
 
-      const prefixMessage = `${locale}`;
-      this.message =
-        `${prefixMessage}\n${translatedRequest}\n` + " | " + this.message;
-
+      // const prefixMessage = `${locale}`;
+      // this.message =
+      //   `${prefixMessage}\n${translatedRequest}\n` + " | " + this.message;
+      this.message = this.placeholder;
       if (this.message.trim() !== "") {
         const whatsappURL = `https://wa.me/${
           this.phoneNumber
