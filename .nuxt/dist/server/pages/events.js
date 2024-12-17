@@ -401,7 +401,7 @@ if(content.locals) module.exports = content.locals;
 // add CSS to SSR context
 var add = __webpack_require__(17).default
 module.exports.__inject__ = function (context) {
-  add("4c27a6c5", content, true, context)
+  add("d901e482", content, true, context)
 };
 
 /***/ }),
@@ -535,9 +535,9 @@ module.exports = ___CSS_LOADER_EXPORT___;
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_vue_loader_lib_index_js_vue_loader_options_WhatsappBtn_vue_vue_type_style_index_0_id_2659b8b6_prod_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(75);
-/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_vue_loader_lib_index_js_vue_loader_options_WhatsappBtn_vue_vue_type_style_index_0_id_2659b8b6_prod_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_vue_loader_lib_index_js_vue_loader_options_WhatsappBtn_vue_vue_type_style_index_0_id_2659b8b6_prod_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_vue_loader_lib_index_js_vue_loader_options_WhatsappBtn_vue_vue_type_style_index_0_id_2659b8b6_prod_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_vue_loader_lib_index_js_vue_loader_options_WhatsappBtn_vue_vue_type_style_index_0_id_2659b8b6_prod_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_vue_loader_lib_index_js_vue_loader_options_WhatsappBtn_vue_vue_type_style_index_0_id_79e69233_prod_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(75);
+/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_vue_loader_lib_index_js_vue_loader_options_WhatsappBtn_vue_vue_type_style_index_0_id_79e69233_prod_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_vue_loader_lib_index_js_vue_loader_options_WhatsappBtn_vue_vue_type_style_index_0_id_79e69233_prod_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_vue_loader_lib_index_js_vue_loader_options_WhatsappBtn_vue_vue_type_style_index_0_id_79e69233_prod_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_3_oneOf_1_2_node_modules_vue_loader_lib_index_js_vue_loader_options_WhatsappBtn_vue_vue_type_style_index_0_id_79e69233_prod_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
 
 
 /***/ }),
@@ -549,7 +549,7 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(16);
 var ___CSS_LOADER_EXPORT___ = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, ".whatsapp-container[data-v-2659b8b6]{transition:all .3s ease-out}#whatsapp-container[data-v-2659b8b6]{position:fixed;bottom:19px;right:20px;z-index:1000}#whatsapp-button[data-v-2659b8b6]{width:40px;height:40px;background-color:#25d366;border-radius:10px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:24px;cursor:pointer;box-shadow:0 4px 8px rgba(0,0,0,.2);transition:transform .2s ease}#whatsapp-button[data-v-2659b8b6]:hover{transform:scale(1.1)}#whatsapp-popup[data-v-2659b8b6]{display:flex;flex-direction:column;position:absolute;bottom:60px;right:0;background-color:#fff;padding:10px;box-shadow:0 4px 8px rgba(0,0,0,.2);width:250px}#whatsapp-popup textarea[data-v-2659b8b6]{width:100%;padding:8px;margin-bottom:10px;border:none;background-color:#fbf0ee;resize:none;font-family:inherit;font-size:14px;color:#817a78}#whatsapp-popup button[data-v-2659b8b6]{background-color:#25d366;color:#fff;border:none;cursor:pointer;transition:background-color .2s ease}#whatsapp-popup button[data-v-2659b8b6]:hover{background-color:#1ebc57}.fade-slide-enter-active[data-v-2659b8b6],.fade-slide-leave-active[data-v-2659b8b6]{transition:all .3s ease}.fade-slide-enter-from[data-v-2659b8b6],.fade-slide-leave-to[data-v-2659b8b6]{opacity:0;transform:translateY(20px)}", ""]);
+___CSS_LOADER_EXPORT___.push([module.i, ".whatsapp-container[data-v-79e69233]{transition:all .3s ease-out}#whatsapp-container[data-v-79e69233]{position:fixed;bottom:19px;right:20px;z-index:1000}#whatsapp-button[data-v-79e69233]{width:40px;height:40px;background-color:#25d366;border-radius:10px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:24px;cursor:pointer;box-shadow:0 4px 8px rgba(0,0,0,.2);transition:transform .2s ease}#whatsapp-button[data-v-79e69233]:hover{transform:scale(1.1)}#whatsapp-popup[data-v-79e69233]{display:flex;flex-direction:column;position:absolute;bottom:60px;right:0;background-color:#fff;grid-gap:10px;gap:10px;padding:10px;box-shadow:0 4px 8px rgba(0,0,0,.2);width:250px}#whatsapp-popup textarea[data-v-79e69233]{width:100%;padding:8px;margin-bottom:10px;border:none;background-color:#fbf0ee;resize:none;font-family:inherit;font-size:14px;color:#817a78}#whatsapp-popup button[data-v-79e69233]{background-color:#25d366;color:#fff;border:none;cursor:pointer;transition:background-color .2s ease}#whatsapp-popup button[data-v-79e69233]:hover{background-color:#1ebc57}.fade-slide-enter-active[data-v-79e69233],.fade-slide-leave-active[data-v-79e69233]{transition:all .3s ease}.fade-slide-enter-from[data-v-79e69233],.fade-slide-leave-to[data-v-79e69233]{opacity:0;transform:translateY(20px)}", ""]);
 // Exports
 module.exports = ___CSS_LOADER_EXPORT___;
 
@@ -703,15 +703,15 @@ const GetFooter = external_graphql_tag_default.a`
     }
   }
 `;
-// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/vue-loader/lib??vue-loader-options!./components/WhatsappBtn.vue?vue&type=template&id=2659b8b6&scoped=true&
-var WhatsappBtnvue_type_template_id_2659b8b6_scoped_true_render = function render() {
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/vue-loader/lib??vue-loader-options!./components/WhatsappBtn.vue?vue&type=template&id=79e69233&scoped=true&
+var WhatsappBtnvue_type_template_id_79e69233_scoped_true_render = function render() {
   var _vm = this,
     _c = _vm._self._c;
   return _c('div', {
     attrs: {
       "id": "whatsapp-container"
     }
-  }, [_vm._ssrNode("<i id=\"whatsapp-button\" class=\"fa fa-whatsapp\" data-v-2659b8b6></i> "), _c('transition', {
+  }, [_vm._ssrNode("<i id=\"whatsapp-button\" class=\"fa fa-whatsapp\" data-v-79e69233></i> "), _c('transition', {
     attrs: {
       "name": "fade-slide"
     }
@@ -719,39 +719,25 @@ var WhatsappBtnvue_type_template_id_2659b8b6_scoped_true_render = function rende
     attrs: {
       "id": "whatsapp-popup"
     }
-  }, [_c('textarea', {
-    directives: [{
-      name: "model",
-      rawName: "v-model",
-      value: _vm.message,
-      expression: "message"
-    }],
-    attrs: {
-      "name": "#",
-      "id": "#",
-      "cols": "8",
-      "rows": "4",
-      "placeholder": _vm.placeholder
-    },
-    domProps: {
-      "value": _vm.message
-    },
-    on: {
-      "input": function ($event) {
-        if ($event.target.composing) return;
-        _vm.message = $event.target.value;
-      }
-    }
-  }), _vm._v(" "), _c('button', {
+  }, [_c('button', {
     staticClass: "main-btn main-btn-2",
     on: {
-      "click": _vm.sendWhatsAppMessage
+      "click": function ($event) {
+        return _vm.sendWhatsAppMessage(_vm.placeholder);
+      }
     }
-  }, [_vm._v("\n        " + _vm._s(_vm.sendTitle) + "\n      ")])]) : _vm._e()])], 2);
+  }, [_vm._v("\n        " + _vm._s(_vm.sendTitle) + "\n      ")]), _vm._v(" "), _c('button', {
+    staticClass: "main-btn main-btn-2",
+    on: {
+      "click": function ($event) {
+        return _vm.sendWhatsAppMessage(_vm.placeholder2);
+      }
+    }
+  }, [_vm._v("\n        " + _vm._s(_vm.sendTitle2) + "\n      ")])]) : _vm._e()])], 2);
 };
-var WhatsappBtnvue_type_template_id_2659b8b6_scoped_true_staticRenderFns = [];
+var WhatsappBtnvue_type_template_id_79e69233_scoped_true_staticRenderFns = [];
 
-// CONCATENATED MODULE: ./components/WhatsappBtn.vue?vue&type=template&id=2659b8b6&scoped=true&
+// CONCATENATED MODULE: ./components/WhatsappBtn.vue?vue&type=template&id=79e69233&scoped=true&
 
 // CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib??vue-loader-options!./components/WhatsappBtn.vue?vue&type=script&lang=js&
 /* harmony default export */ var WhatsappBtnvue_type_script_lang_js_ = ({
@@ -763,7 +749,11 @@ var WhatsappBtnvue_type_template_id_2659b8b6_scoped_true_staticRenderFns = [];
       // WhatsApp numarası
       sendTitle: "Send Message",
       // Buton başlığı
-      placeholder: "Merhaba bilgi almak istiyorum" // Textarea placeholder
+      sendTitle2: "Reservation",
+      // Buton başlığı
+      placeholder: "Merhaba bilgi almak istiyorum",
+      // Textarea placeholder
+      placeholder2: "Merhaba. Rezervasyonumla ilgili bilgi almak istiyorum." // Textarea placeholder
     };
   },
 
@@ -780,32 +770,16 @@ var WhatsappBtnvue_type_template_id_2659b8b6_scoped_true_staticRenderFns = [];
   methods: {
     updateLocaleTexts(locale) {
       // Locale'e göre "Send Message" ve "Message" çevirileri
-      this.sendTitle = locale === "tr" ? "Mesaj Gönder" : locale === "en" ? "Send Message" : locale === "ru" ? "Отправить сообщение" : locale === "de" ? "Nachricht senden" : locale === "uk" ? "Надіслати повідомлення" : "Send Message";
+      this.sendTitle = locale === "tr" ? "Bilgi Al" : locale === "en" ? "Get Information" : locale === "ru" ? "Получить информацию" : locale === "de" ? "Informationen erhalten" : locale === "uk" ? "Отримати інформацію" : "Get Information";
+      this.sendTitle2 = locale === "tr" ? "Rezervasyon" : locale === "en" ? "Reservation" : locale === "ru" ? "Бронирование" : locale === "de" ? "Reservierung" : locale === "uk" ? "Бронювання" : "Reservation";
       this.placeholder = locale === "tr" ? "Merhaba bilgi almak istiyorum" : locale === "en" ? "Hi, I want to get information" : locale === "ru" ? "Здравствуйте, я хочу получить информацию" : locale === "de" ? "Hallo, ich möchte Informationen erhalten" : locale === "uk" ? "Здравствуйте, я хочу получить информацию" : "Hi, I want to get information";
+      this.placeholder2 = locale === "tr" ? "Merhaba. Rezervasyonumla ilgili bilgi almak istiyorum." : locale === "en" ? "Hello. I would like to get information about my reservation." : locale === "ru" ? "Здравствуйте. Я хотел бы получить информацию о моем бронировании." : locale === "de" ? "Guten Tag. Ich möchte Informationen zu meiner Reservierung erhalten." : locale === "uk" ? "Привіт. Я хотів би отримати інформацію про своє бронювання." : "Hello. I would like to get information about my reservation.";
     },
     togglePopup() {
       this.isPopupOpen = !this.isPopupOpen;
     },
-    sendWhatsAppMessage() {
-      let locale = this.$i18n.locale;
-      // Mesaj başlığını güncelle
-      // const translatedRequest =
-      //   locale === "tr"
-      //     ? "Bilgi Almak İstiyorum"
-      //     : locale === "en"
-      //     ? "I Want to Get Information"
-      //     : locale === "ru"
-      //     ? "Я хочу получить информацию"
-      //     : locale === "de"
-      //     ? "Ich möchte Informationen erhalten"
-      //     : locale === "uk"
-      //     ? "Я хочу отримати інформацію"
-      //     : "I Want to Get Information";
-
-      // const prefixMessage = `${locale}`;
-      // this.message =
-      //   `${prefixMessage}\n${translatedRequest}\n` + " | " + this.message;
-      this.message = this.placeholder;
+    sendWhatsAppMessage(text) {
+      this.message = text;
       if (this.message.trim() !== "") {
         const whatsappURL = `https://wa.me/${this.phoneNumber}?text=${encodeURIComponent(this.message)}`;
         window.open(whatsappURL, "_blank");
@@ -835,11 +809,11 @@ if (style0.__inject__) style0.__inject__(context)
 
 var component = Object(componentNormalizer["a" /* default */])(
   components_WhatsappBtnvue_type_script_lang_js_,
-  WhatsappBtnvue_type_template_id_2659b8b6_scoped_true_render,
-  WhatsappBtnvue_type_template_id_2659b8b6_scoped_true_staticRenderFns,
+  WhatsappBtnvue_type_template_id_79e69233_scoped_true_render,
+  WhatsappBtnvue_type_template_id_79e69233_scoped_true_staticRenderFns,
   false,
   injectStyles,
-  "2659b8b6",
+  "79e69233",
   "2396e730"
   
 )

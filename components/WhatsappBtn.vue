@@ -6,16 +6,25 @@
     <!-- Animasyonlu Popup -->
     <transition name="fade-slide">
       <div v-if="isPopupOpen" id="whatsapp-popup">
-        <textarea
+        <!-- <textarea
           v-model="message"
           name="#"
           id="#"
           cols="8"
           rows="4"
           :placeholder="placeholder"
-        ></textarea>
-        <button class="main-btn main-btn-2" @click="sendWhatsAppMessage">
+        ></textarea> -->
+        <button
+          class="main-btn main-btn-2"
+          @click="sendWhatsAppMessage(placeholder)"
+        >
           {{ sendTitle }}
+        </button>
+        <button
+          class="main-btn main-btn-2"
+          @click="sendWhatsAppMessage(placeholder2)"
+        >
+          {{ sendTitle2 }}
         </button>
       </div>
     </transition>
@@ -30,7 +39,9 @@ export default {
       message: "",
       phoneNumber: "905424648229", // WhatsApp numarası
       sendTitle: "Send Message", // Buton başlığı
+      sendTitle2: "Reservation", // Buton başlığı
       placeholder: "Merhaba bilgi almak istiyorum", // Textarea placeholder
+      placeholder2: "Merhaba. Rezervasyonumla ilgili bilgi almak istiyorum.", // Textarea placeholder
     };
   },
   watch: {
@@ -48,16 +59,29 @@ export default {
       // Locale'e göre "Send Message" ve "Message" çevirileri
       this.sendTitle =
         locale === "tr"
-          ? "Mesaj Gönder"
+          ? "Bilgi Al"
           : locale === "en"
-          ? "Send Message"
+          ? "Get Information"
           : locale === "ru"
-          ? "Отправить сообщение"
+          ? "Получить информацию"
           : locale === "de"
-          ? "Nachricht senden"
+          ? "Informationen erhalten"
           : locale === "uk"
-          ? "Надіслати повідомлення"
-          : "Send Message";
+          ? "Отримати інформацію"
+          : "Get Information";
+
+      this.sendTitle2 =
+        locale === "tr"
+          ? "Rezervasyon"
+          : locale === "en"
+          ? "Reservation"
+          : locale === "ru"
+          ? "Бронирование"
+          : locale === "de"
+          ? "Reservierung"
+          : locale === "uk"
+          ? "Бронювання"
+          : "Reservation";
 
       this.placeholder =
         locale === "tr"
@@ -71,30 +95,25 @@ export default {
           : locale === "uk"
           ? "Здравствуйте, я хочу получить информацию"
           : "Hi, I want to get information";
+
+      this.placeholder2 =
+        locale === "tr"
+          ? "Merhaba. Rezervasyonumla ilgili bilgi almak istiyorum."
+          : locale === "en"
+          ? "Hello. I would like to get information about my reservation."
+          : locale === "ru"
+          ? "Здравствуйте. Я хотел бы получить информацию о моем бронировании."
+          : locale === "de"
+          ? "Guten Tag. Ich möchte Informationen zu meiner Reservierung erhalten."
+          : locale === "uk"
+          ? "Привіт. Я хотів би отримати інформацію про своє бронювання."
+          : "Hello. I would like to get information about my reservation.";
     },
     togglePopup() {
       this.isPopupOpen = !this.isPopupOpen;
     },
-    sendWhatsAppMessage() {
-      let locale = this.$i18n.locale;
-      // Mesaj başlığını güncelle
-      // const translatedRequest =
-      //   locale === "tr"
-      //     ? "Bilgi Almak İstiyorum"
-      //     : locale === "en"
-      //     ? "I Want to Get Information"
-      //     : locale === "ru"
-      //     ? "Я хочу получить информацию"
-      //     : locale === "de"
-      //     ? "Ich möchte Informationen erhalten"
-      //     : locale === "uk"
-      //     ? "Я хочу отримати інформацію"
-      //     : "I Want to Get Information";
-
-      // const prefixMessage = `${locale}`;
-      // this.message =
-      //   `${prefixMessage}\n${translatedRequest}\n` + " | " + this.message;
-      this.message = this.placeholder;
+    sendWhatsAppMessage(text) {
+      this.message = text;
       if (this.message.trim() !== "") {
         const whatsappURL = `https://wa.me/${
           this.phoneNumber
@@ -143,11 +162,13 @@ export default {
 /* WhatsApp Popup */
 #whatsapp-popup {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* Alt alta diz */
+
   position: absolute;
   bottom: 60px;
   right: 0;
   background-color: white;
+  gap: 10px;
 
   padding: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
