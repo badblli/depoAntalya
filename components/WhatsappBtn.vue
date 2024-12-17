@@ -18,13 +18,13 @@
           class="main-btn main-btn-2"
           @click="sendWhatsAppMessage(placeholder)"
         >
-          {{ sendTitle }}
+          {{ placeholder }}
         </button>
         <button
           class="main-btn main-btn-2"
           @click="sendWhatsAppMessage(placeholder2)"
         >
-          {{ sendTitle2 }}
+          {{ placeholder2 }}
         </button>
       </div>
     </transition>
@@ -38,8 +38,7 @@ export default {
       isPopupOpen: false,
       message: "",
       phoneNumber: "905424648229", // WhatsApp numarası
-      sendTitle: "Send Message", // Buton başlığı
-      sendTitle2: "Reservation", // Buton başlığı
+
       placeholder: "Merhaba bilgi almak istiyorum", // Textarea placeholder
       placeholder2: "Merhaba. Rezervasyonumla ilgili bilgi almak istiyorum.", // Textarea placeholder
     };
@@ -56,33 +55,6 @@ export default {
   },
   methods: {
     updateLocaleTexts(locale) {
-      // Locale'e göre "Send Message" ve "Message" çevirileri
-      this.sendTitle =
-        locale === "tr"
-          ? "Bilgi Al"
-          : locale === "en"
-          ? "Get Information"
-          : locale === "ru"
-          ? "Получить информацию"
-          : locale === "de"
-          ? "Informationen erhalten"
-          : locale === "uk"
-          ? "Отримати інформацію"
-          : "Get Information";
-
-      this.sendTitle2 =
-        locale === "tr"
-          ? "Rezervasyon"
-          : locale === "en"
-          ? "Reservation"
-          : locale === "ru"
-          ? "Бронирование"
-          : locale === "de"
-          ? "Reservierung"
-          : locale === "uk"
-          ? "Бронювання"
-          : "Reservation";
-
       this.placeholder =
         locale === "tr"
           ? "Merhaba bilgi almak istiyorum"
@@ -128,6 +100,13 @@ export default {
 </script>
 
 <style scoped>
+.main-btn {
+  line-height: 30px !important;
+  font-size: 14px !important;
+  padding: 0 10px !important;
+  font-weight: 500 !important;
+}
+
 .whatsapp-container {
   transition: all 0.3s ease-out; /* Her zaman animasyon etkin */
 }
@@ -193,7 +172,10 @@ export default {
   background-color: #25d366;
   color: white;
   border: none;
-
+  white-space: normal; /* Metin taşarsa alt satıra geç */
+  word-wrap: break-word; /* Uzun kelimeleri böler */
+  text-align: center; /* Metni ortalar */
+  padding: 10px; /* İç boşluklar */
   cursor: pointer;
   transition: background-color 0.2s ease;
 }
